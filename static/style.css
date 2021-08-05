@@ -1,0 +1,42 @@
+.bgimg {
+    background-image: url("../static/images/image2.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color1 {
+    background-color:lightseagreen;
+}
+
+.color2 {
+    background-color: lightcoral;
+}
+
+.edit {
+    background-color: cornflowerblue;
+}
+
+.component {
+    height: 65vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-text {
+    text-align: center;
+    padding: 1em;
+    width: 65%;
+    color: aliceblue;
+}
+
+.footer {
+    height: 30vh;
+}
