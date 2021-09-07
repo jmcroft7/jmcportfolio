@@ -1,42 +1,225 @@
-.bgimg {
-    background-color: #84afe6;
-    width: 100vw;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.color1 {
-    background-color: #b7d3f2;
+/* nav starts here */
+nav {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #222;
+  width: 100vw;
+  padding: 1em 10%;
 }
 
-.color2 {
-    background-color: #afafdc;
+nav ul {
+	text-align: center;
 }
 
-.edit {
-    background-color: cornflowerblue;
+nav ul li {
+	list-style: none;
 }
 
-.component {
-    height: 100vh;
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  transition: background 0.2s linear;
 }
 
-.center-text {
-    text-align: center;
-    padding: 1em;
-    width: 65%;
-    color: black;
+body.dark {
+  background: #292c35;
 }
 
-.footer {
-    height: 30vh;
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+/* nav ends here */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilephoto {
+  border: 5px solid #333;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.bigCard {
+  position: relative;
+  background-color: azure;
+  height: 75vh;
+  width: 75vw;
+  margin: 2em;
+  padding: 3em;
+  border-radius: 5px;
+  border: 1px solid #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.orange {
+  box-shadow: 15px 15px 0px 0px #fa944b, 15px 15px 0 1px black;
+}
+
+.orangeLetter {
+  color: #fa944b;
+}
+
+.yellow {
+  box-shadow: 15px 15px 0px 0px #ffdb62, 15px 15px 0 1px black;
+}
+
+.yellowLetter {
+  color: #ffdb62;
+}
+
+.blue {
+  box-shadow: 15px 15px 0px 0px #2dc5fa, 15px 15px 0 1px black;
+}
+
+.blueLetter {
+  color: #2dc5fa;
+}
+
+.violet {
+  box-shadow: 15px 15px 0px 0px #564cff, 15px 15px 0 1px black;
+}
+
+.violetLetter {
+  color: #564cff;
+}
+.pink {
+  box-shadow: 15px 15px 0px 0px #ffa4cb, 15px 15px 0 1px black;
+}
+
+.pinkLetter {
+  color: #ffa4cb;
+}
+
+.red {
+  box-shadow: 15px 15px 0px 0px #ff4c4c, 15px 15px 0 1px black;
+}
+
+.redLetter {
+  color: #ff4c4c;
+}
+
+.content {
+  width: 60%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+}
+
+.fab {
+  transform: scale(2);
+}
+
+.custom-shape-divider-top-1630974307 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1630974307 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1630974307 .shape-fill {
+    fill: #FA944B;
+}
+
+.custom-shape-divider-top-1630974356 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1630974356 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1630974356 .shape-fill {
+    fill: #FFDB62;
+}
+
+
+.skillsphoto {
+	width: 200px;
 }
