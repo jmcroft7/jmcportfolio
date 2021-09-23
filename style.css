@@ -384,6 +384,9 @@ nav ul a:hover {
         right: -100%;
     }
 
+    .socials {
+        flex-direction: column;
+    }
     /* about responsiveness */
     .about-content {
         flex-direction: column;
