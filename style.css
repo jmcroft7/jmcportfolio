@@ -136,7 +136,7 @@ nav ul a:hover {
 
 #home {
     min-height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('/images/hero1.jfif') no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./images/hero1.jfif') no-repeat;
     background-position: fixed;
     background-attachment: fixed;
     background-size: cover;
