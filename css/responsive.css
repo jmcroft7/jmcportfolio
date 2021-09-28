@@ -1,0 +1,158 @@
+/* ====== root css ====== */
+
+:root {
+    --primary-color: #22577A;
+    --secondary-color: #38A3A5;
+    --accent-color: #80ED99;
+    --light-color: #ffffff;
+    --medium-color: #a0a0a0;
+    --dark-color: #000000;
+    --size-1: 1rem;
+    --size-2: 1.5rem;
+    --size-3: 2rem;
+    --size-4: 2.5rem;
+    --border-radius-1: 6px;
+    --border-radius-2: 20px;
+    --nav-padding: 100px;
+    --family-2: 'Quattrocento', sans-serif;
+}
+
+/* ====== responsive media query start ====== */
+
+/* laptop */
+
+@media (max-width: 992px) {
+    .max-width {
+        max-width: 930px;
+        padding: 0 50px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 40%;
+        left: -100%;
+        top: 0;
+        background: var(--dark-color);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .menu.active {
+        left: 0;
+    }
+    .nav_link {
+        display: block;
+    }
+    .nav_link a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 800px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .home-content {
+        padding: 1.5rem;
+    }
+    .text-1 {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+    .text-2 {
+        font-size: 63px;
+    }
+    .text-3 {
+        font-size: 34px;
+    }
+    .socials {
+        flex-wrap: wrap;
+    }
+    .about {
+        background: #e0e0e0;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .mySlides img {
+        width: 250px;
+        height: 200px;
+    }
+    .subtext-1, .typing-2, .typing-3 {
+        font-size: 1.2rem;
+    }
+    .about-content p {
+        font-size: 1rem;
+    }
+    .about_list {
+        list-style: none;
+        padding: 0;
+        margin-left: 30px;
+        margin-bottom: 1rem;
+    }
+    .about_item {
+        margin-bottom: 5px;
+    }
+    .about-link {
+        color: var(--secondary-color);
+    }
+    .project .project-content img {
+        height: 175px;
+        width: 175px;
+        object-fit: contain;
+        border-radius: 6px;
+    }
+    .project .project-content {
+        flex-direction: column;
+    }
+}
+
+/* mobile large */
+
+@media (max-width: 500px) {
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .home-content {
+        padding: 1rem;
+    }
+    .text-1 {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+    .text-2 {
+        font-size: 53px;
+    }
+    .text-3 {
+        font-size: 28px;
+    }
+}

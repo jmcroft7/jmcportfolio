@@ -1,22 +1,16 @@
 $(document).ready(function () {
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Developer", "Designer", "Creator", "Problem Solver", "Programmer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Blogger", "Gamer", "Ping Pong Player", "Chess Player", "Fitness Enthusiast"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    })
+    const progressBar = document.querySelector("#progressBar");
+    let totalPageHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = () => {
+        let newProgressHeight = (window.pageYOffset / totalPageHeight) * 100;
+        progressBar.style.height = `${newProgressHeight}%`;
+        progressBar.style.opacity = `${newProgressHeight}%`;
+    };
 
     $(window).scroll(function () {
         // sticky navbar on scroll script
-        if (this.scrollY > 100) {
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
@@ -30,16 +24,59 @@ $(document).ready(function () {
         }
     });
 
+    // slide-up script
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
+        // removing smooth scroll on slide-up button click
+        $('html').css("scrollBehavior", "auto");
     });
 
-    function myFunction() {
-        var x = document.getElementsByClassName("menu");
-        if (x.style.display === "inline-flex") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "inline-flex";
+    $('.navbar .menu li a').click(function () {
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
+    // toggle menu/navbar script
+    $('.menu-btn').click(function () {
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Developer", "Designer", "Creator", "Problem Solver", "Programmer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Developer", "Ping Pong Player", "Chess Player", "Fitness Enthusiast", "Gamer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-3", {
+        strings: ["Accomplishments"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: false
+    });
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 6000); // Change image every 2 seconds
     }
+
 });
