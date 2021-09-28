@@ -207,7 +207,7 @@ section {
 
 .home {
     display: flex;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("./images/banner.jfif") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../images/banner.jfif") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: clamp(500px, 100vh, 100vh);
@@ -419,7 +419,7 @@ section {
 }
 
 .project {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("./images/banner2.jfif") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../images/banner2.jfif") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--light-color);
