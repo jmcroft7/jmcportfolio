@@ -401,14 +401,12 @@ section {
 }
 
 .about-left {
-    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-right {
-    width: 55%;
     position: relative;
 }
 
