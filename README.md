@@ -8,7 +8,7 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/jmcroft7/portfolio">
+  <a href="https://jmcroft7.github.io/portfolio/">
     <img src="./images/logo.PNG" alt="Logo" width="400" height="225">
   </a>
  </div>
