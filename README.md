@@ -31,13 +31,13 @@
 
 ### Built With
 
-- [HTML5](https://nextjs.org/)
-- [CSS3](https://reactjs.org/)
-- [JavaScript](https://vuejs.org/)
-- [jQuery.js](https://angular.io/)
-- [typed.js](https://svelte.dev/)
-- [DevIcons](https://laravel.com)
-- [FontAwesome](https://getbootstrap.com)
+- [HTML5]
+- [CSS3]
+- [JavaScript]
+- [jQuery.js](https://jquery.com/)
+- [typed.js](https://github.com/mattboldt/typed.js/)
+- [DevIcons](https://devicon.dev/)
+- [FontAwesome](https://fontawesome.com/v5.15/icons)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
