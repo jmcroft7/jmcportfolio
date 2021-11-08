@@ -31,9 +31,9 @@
 
 ### Built With
 
-- [HTML5]
-- [CSS3]
-- [JavaScript]
+- HTML5
+- CSS3
+- JavaScript
 - [jQuery.js](https://jquery.com/)
 - [typed.js](https://github.com/mattboldt/typed.js/)
 - [DevIcons](https://devicon.dev/)
